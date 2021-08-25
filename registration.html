@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>STUDENT REGISTRATION FORM</title>
+    <script>
+        <!-- Function to validate the form -->
+        function submitForm()
+        {
+            document.myForm.target = "_blank";
+            window.open("payment.html"); <!-- Opens payment.html file on complete validation -->
+            document.myForm.submit();
+        }
+       
+        function validateForm() 
+        {
+            let x = document.forms["myForm"]["fname"].value;
+            document.forms["myForm"]["fname"].style.borderColor = "red";
+            <!-- Checks if the value in first name field is null -->
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            else{
+                 <!-- Changes the border colour of the field to green on valid entry to enhance user visibility -->
+                document.forms["myForm"]["fname"].style.borderColor = "green";
+                 <!-- Checks the @ and . position and characters entered before and after them to look for a valid email id -->
+                var y=document.forms["myForm"]["Email_ID"].value;  
+                var atposition=y.indexOf("@");  
+                var dotposition=y.lastIndexOf(".");  
+                if (atposition<1 || dotposition<atposition+2 || dotposition+2>=y.length){  
+                    alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+                    return false;  
+                }
+                else{
+                     <!-- Regex used to validate phone number, should contain 10 digits and should not start from 0 -->
+                    var phoneno = /^\d{10}$/;
+                    if(phone_no.value.match(phoneno)){
+                         <!-- Regex used to check a pin code, First digit can vary from 1 to 9 whereas the next 5 digits can be any number from 0 to 9 -->
+                        var a = /^[1-9][0-9]{5}$/;  
+                        if (pin.value.match(a))   
+                        {  
+                            return submitForm();
+                        }   
+                        else   
+                        {  
+                            alert("Your Entered Zip Code Is Not Valid.")  
+                        }  
+                
+                    }
+                    else
+                    {
+                        alert("Please enter a valid 10 digit phone number");
+                        return false;
+                
+
+                    }
+            }
+              
+            
+           
+            }
+            
+        }
+
+        
+        
+
+    
+    </script>
+        
+
+    
+    <style>
+        input[type=text] {
+            width: 100%;
+            padding: 10px 0;
+            background: none;
+            border: none;
+            border-bottom: 1px solid #666;
+            color: #ddd;
+            font-size: 14px;
+            text-transform: uppercase;
+            outline: none;
+            transition: border-color .2s;
+
+        }
+
+        input[type=text]::placeholder {
+            color: #666;
+        }
+
+        input[type=text]:focus {
+            border-bottom-color: #ddd;
+        }
+
+        input[type=email] {
+            width: 100%;
+            padding: 10px 0;
+            background: none;
+            border: none;
+            border-bottom: 1px solid #666;
+            color: #ddd;
+            font-size: 14px;
+            outline: none;
+            transition: border-color .2s;
+        }
+
+
+        input[type=email]::placeholder {
+            color: #666;
+        }
+
+        input[type=email]:focus {
+            border-bottom-color: #ddd;
+        }
+
+
+
+        /*Buttons*/
+        input[type=submit],
+        input[type=reset] {
+            background-color: #4d4d4d;
+            border: none;
+            color: white;
+            padding: 10px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+         <!-- Hovering effects(when cursor is moved over the submit button) -->
+        input[type=submit]:hover {
+            color: black;
+
+        }
+          <!-- Hovering effects(when cursor is moved over the reset button) -->
+        input[type=reset]:hover {
+            color: black;
+
+        }
+
+
+        input[type=date] {
+            border: 1px solid #666;
+            background-color: #666;
+            border-radius: 7px;
+            padding: 4px 8px;
+
+        }
+
+        input[type=file] {
+            border: 1px solid #666;
+            background-color: #666;
+            border-radius: 7px;
+            padding: 5px;
+        }
+
+        input[type=number] {
+            border: 1px solid #666;
+            background-color: #666;
+            border-radius: 7px;
+            padding: 5px;
+            color: white;
+            outline: none;
+            width: 50px;
+            text-align: center;
+        }
+
+
+
+
+        #table1 {
+            border-radius: 25px;
+            background:rgb(248,248,255,0.9);
+            padding: 20px;
+            width: 1000px;
+            height: 500px;
+            
+        }
+
+        #table2 {
+            background:rgb(0, 0, 204,0.1);
+            padding: 20px;
+            border: 1px solid ghostwhite;
+            border-collapse: collapse;
+            border-radius: 17px;
+
+        }
+
+        td {
+            padding: 20px;
+        }
+
+        #c1 {
+
+            color: #000099;
+            border: blue;
+            border-color: blue;
+            border-block-color: blue;
+        
+        }
+
+        body {
+            background: linear-gradient(to right, #ea1d6f 0%, #eb466b 100%);
+            font-size: 15px;
+        }
+
+        #title {
+            text-align: center;
+            color: #000099;
+            border-bottom: 3px solid #000099;
+
+        }
+
+        #dropdown {
+            background-color: ghostwhite;
+            color: black;
+            border-radius: 7px;
+            padding: 8px;
+            width: 200px;
+            border: 1px;
+            font-size: 15px;
+            
+            border-color: blue;
+        }
+    </style>
+</head>
+
+<body style="background-image: url('https://wallpapercave.com/wp/wp3102516.jpg');">
+      <!-- Usage of marquee tool to enable scrolling of the form title -->
+    <marquee scrollamount="10"><img src="Reminiscence.png"></marquee> 
+    <center>
+        <!-- Validation of form using javascript on submission-->
+        <form name="myForm" onsubmit="return validateForm()" method="POST">
+            <!-- Creation of form inside a table to enhance the look and structure of the form-->
+            <table id="table1" bgcolor="white">
+                <tr>
+                    <td colspan="3">
+                        <h1 id='title'>STUDENT REGISTRATION FORM</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- Usage of appropriate placeholders to inform the user as to what value has to be entered-->
+                    <td style="width:12px;"> </td>
+                    <td id='c1'>FIRST NAME:</td>
+                    <td><input style="color: black;" type="text" name="fname" placeholder="First Name"</td>
+
+                </tr>
+                <tr>
+                    <td style="width:12px;"> </td>
+                    <td id='c1'>LAST NAME:</td>
+                    <td><input style="color: black;" type="text" name="lname" placeholder="Last Name"></td>
+                </tr>
+                <tr>
+                    <td style="width:12px;"> </td>
+                    <td id='c1'>DATE OF BIRTH:</td>
+                    <!-- Usage of min and max attribute to limit the entries in accordance with the college ages-->
+                    <td><input style="color: black;" type="date" name="date" min="01-04-1998" max="01-04-2020"></td>
+                </tr>
+                <tr>
+                    <td style="width:12px;"> </td>
+                    <td id='c1'>EMAIL ID:</td>
+                    <td><input style="color: black;" type="text" name="Email_ID" placeholder=EMAIL ></td>
+                </tr>
+                <tr>
+                    <td style="width:12px;"> </td>
+                    <td id='c1'>MOBILE NUMBER:</td>
+                    <td><input style="color: black;" type="text" id="phone_no" placeholder="10 digits number"></td>
+                </tr>
+                <tr>
+                    <td style="width:12px;"> </td>
+                    <td id='c1'>COLLEGE NAME:</td>
+                    <td><input style="color: black;" type="text" name="college"></td>
+                </tr>
+                <tr>
+                    <td style="width:12px;"> </td>
+                    <td id='c1'>GENDER:</td>
+                    <!-- Usage of nbsp(non-breaking spaces for proper alignment of the form-->
+                    <td style="color: black;"><input type="radio" name="gender" value="male">&nbsp;&nbsp; MALE &nbsp;&nbsp;
+                        <input type="radio" name="gender" value="Female">&nbsp;&nbsp; FEMALE &nbsp;&nbsp;
+                        <input type="radio" name="gender" value="Prefer not to say">&nbsp;&nbsp; PREFER NOT TO SAY &nbsp;&nbsp;
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <!-- FILE input used to obtain the user photo-->
+                    <td style="width:12px;"> </td>
+                    <td id='c1'>UPLOAD PHOTO:</td>
+                    <td><input id="img" type="file" name="photo"></td>
+                </tr>
+                <tr>
+                    <td style="width:12px;"> </td>
+                    <td id='c1'>CITY:</td>
+                    <td><input style="color: black;" type="text" name="city"></td>
+                </tr>
+                <tr>
+                    <td style="width:12px;"> </td>
+                    <td id='c1'>PIN CODE:</td>
+                    <td><input style="color: black;" type="text" id="pin"></td>
+                </tr>
+                <tr>
+                    <td style="width:12px;"> </td>
+                    <td id='c1'>STATE:</td>
+                    <td><select id="dropdown" name="state">
+                        <option>Select</option>
+                            <option>Coimbatore</option>
+                            <option>Chennai</option>
+                            <option>Bangalore</option>
+                            <option>Kerala</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td style="width:12px;"> </td>
+                    <td id='c1'>COUNTRY:</td>
+                    <!-- Usage of readonly attribute to prevent the user from altering the value-->
+                    <td><input style="color: black;" type="text" name="country" value="India" readonly="readonly"></td>
+                </tr>
+
+                <tr>
+                    <td style="width:12px;"> </td>
+                    <td id='c1'>EVENTS:</td>
+                    <td>
+                        <table id="table2">
+
+                            <tr>
+                                <td>1</td>
+                                <td>Fun Fair</td>
+                                <td> <input type="checkbox" id="shipwreck" name="shipwreck" value="shipwreck">
+                                    <label for="vehicle1"> Shipwreck </label><br>
+                                </td>
+                                <td> <input type="checkbox" id="ee sala cup namde" name="ee sala cup namde"
+                                        value="ee sala cup namde">
+                                    <label for="vehicle1"> Ee sala cup namde </label><br>
+                                </td>
+                                <td> <input type="checkbox" id="block & tackle" name="block & tackle"
+                                        value="block & tackle">
+                                    <label for="vehicle1">Block and Tackle</label><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Theatrics</td>
+                                <td><input type="checkbox" id="movierev" name="movierev" value="movierev">
+                                    <label for="vehicle1">Movie Review</label><br>
+                                </td>
+                                <td><input type="checkbox" id="photography" name="photography" value="photography">
+                                    <label for="vehicle1">Photography</label><br>
+                                </td>
+                                <td><input type="checkbox" id="tunes" name="tunes" value="tunes">
+                                    <label for="vehicle1">Adapt Tunes</label><br>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:12px;"> </td>
+                    <td id='c1'>SPECIAL TEAM EVENTS:</td>
+                    <td style="color:black;"><input type="radio" name="course"> &nbsp;&nbsp; ADZAP &nbsp;&nbsp;
+                        <input type="radio" name="course"> &nbsp;&nbsp; BAND &nbsp;&nbsp;
+                        <input type="radio" name="course"> &nbsp;&nbsp; FIFA &nbsp;&nbsp;
+
+                </tr>
+
+                <tr>
+                    <td style="width:12px;"> </td>
+                    <td id='c1'>TEAM NAME:</td>
+                    <td><input style="color: black;" type="text" name="tname" placeholder="Team Name"></td>
+                </tr>
+
+                <tr>
+                    <td style="width:12px;"> </td>
+                    <td id='c1'>TEAM LEADER:</td>
+                    <td><input style="color: black;" type="text" name="tleader" placeholder="Team Leader"></td>
+                </tr>
+                <tr>
+                    <td style="width:12px;"></td>
+                    <td id='c1'>NO. OF TEAM MEMBERS:</td>
+                    <td><label for="tmembers"></label>
+                        <input style="color: black;" type="number" id="tmembers" name="tmembers" min="3" max="6">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:12px;"> </td>
+                    <td id='c1'>TEAM MEMBERS:</td>
+                    <td>
+                        <ul>
+                            <li><input style="color: black;" type="text" name="member1" placeholder="Member 1"></li>
+                            <li><input style="color: black;" type="text" name="member2" placeholder="Member 2"></li>
+                            <li><input style="color: black;" type="text" name="member3" placeholder="Member 3"></li>
+                            <li><input style="color: black;" type="text" name="member4" placeholder="Member 4"></li>
+                            <li><input style="color: black;" type="text" name="member5" placeholder="Member 5"></li>
+                            <li><input style="color: black;" type="text" name="member6" placeholder="Member 6"></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table><br>
+            <div>
+                <input type="submit">
+               
+                <input type="reset" name="reset">
+            </div>
+
+        </form>
+
+</body>
+</html>

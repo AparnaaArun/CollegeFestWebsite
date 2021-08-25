@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+.about{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    color: snow;   
+}
+
+.about video{
+    
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.about .abcontent{
+    position: relative;
+    z-index: 1;
+    width: 97%;
+    margin-top: -47%;
+    margin-bottom: 10%;
+}
+
+.about .abcontent p{
+    margin: 3% 10% 0 10%;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 3% 5% 5%;
+    font-size: 1.7em;
+    line-height: 1.7;
+    font-weight: 500;
+    border-radius: 10%;
+    color: whitesmoke;
+    margin-bottom: 10%;
+}
+
+#about{
+    font-family: 'Arvo', serif;
+    text-align: center;
+    font-size: 3em;
+}
+
+.moretime{
+    display: inline;
+    background-color: orange;
+    color: black;
+    padding: 8px 10px;
+    margin: 0px 0;
+    border: none;
+    border-radius: 30px;
+    transition: background 0.5s;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.moretime:hover{
+    background-color: black;
+    color: white;
+}

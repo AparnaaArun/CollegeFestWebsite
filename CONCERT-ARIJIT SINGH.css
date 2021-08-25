@@ -1,0 +1,595 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// effects for the navigation bar 
+.logo{
+    padding-top: 3px;
+}
+.divouter {
+    position: absolute;
+    top: 10px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.navbar li{
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    color: rgb(255, 255, 255);
+
+    border: none;
+
+    transition: all .4s;
+
+}
+
+.navbar li:hover{
+
+    border-radius: 5px;
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 7px 0 -2px #f85959,
+
+    0 15px 0 -4px #39a2db,
+
+    0 16px 10px -3px #39a2db;
+
+}
+
+nav{
+
+    flex: 1;
+
+    text-align: right;
+
+
+
+}
+
+nav ul{
+
+    display: inline-block;
+
+    list-style-type: none;
+
+}
+
+nav ul li{
+
+    display: inline-block;
+
+    margin-right: 20px;
+
+}
+
+a{
+
+    text-decoration: none;
+
+    color: black;
+
+}
+.closebtn{
+    color: white;
+}
+
+
+#set-img{
+
+    width: 30px;
+
+    height: 30px;
+
+}
+body{
+    background-image: url("https://www.tampabay.com/resizer/igVDye-kswgzTZfnWo1HFNb9oqA=/1600x900/smart/cloudfront-us-east-1.images.arcpublishing.com/tbt/ZQNWX3IFTBDDLCBYPNCAAQO4RA.JPG");
+    background-repeat: no-repeat;
+    background-size: 100% 1020px;
+    overflow-x: hidden;
+}
+// effects for the text on image on the left side
+.d1 {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    border-radius: 15px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 45%;
+}
+.d2 {
+    position: absolute;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.p1{
+    font-family: Verdana, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color:white ;
+    text-shadow: 2px 2px 5px red;
+}
+.p2{
+    text-align: right;
+    font-style: italic;
+}
+.p4{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+p {
+    line-height: 1.5 ;
+    margin-top: 0 ;
+    margin-bottom: 0 ;
+    text-indent: 16px ;
+}
+h1 {
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+    color: black;
+}
+// enhancement for the three buttons on the right side of the screen
+#mySidenav a {
+position: absolute;
+margin-top: 100px;
+right: -250px;
+transition: 0.3s;
+padding: 15px;
+width: 300px;
+text-decoration: none;
+font-size: 20px;
+color: white;
+border-radius: 7px 0 0 7px;
+}
+
+#mySidenav a:hover {
+right: 0;
+}
+
+
+#blog {
+top: 80px;
+background-color: #1d35bb;
+}
+
+#projects {
+top: 140px;
+background-color: #f44336;
+}
+
+#contact {
+top: 225px;
+background-color: #555
+}
+// glow effect for the word "arijit singh" 
+.glow {
+font-size: 100px;
+color: rgb(0, 0, 0);
+text-align: center;
+animation: glow 1s ease-in-out infinite alternate;
+letter-spacing: 2px;
+font-family: 'Alatsi';
+}
+@-webkit-keyframes glow {
+from {
+text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px darkblue, 0 0 40px darkblue, 0 0 50px darkblue, 0 0 60px darkblue, 0 0 70px darkblue;
+}
+
+to {
+text-shadow: 0 0 20px #fff, 0 0 30px rgb(29, 29, 228), 0 0 40px rgb(29, 29, 228), 0 0 50px rgb(29, 29, 228), 0 0 60px rgb(29, 29, 228), 0 0 70px rgb(29, 29, 228), 0 0 80px rgb(29, 29, 228);
+}
+}
+
+// animation using css for the "book tickets" button 
+.button {
+background-color: #f4511e; 
+border-radius: 8px;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 22px;
+padding: 20px;
+width: 280px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 0px;
+}
+.button:hover{
+
+background-color:rgba(0, 0, 0, 0.8);
+transform: scale(1.05); 
+}
+
+.button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.button span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.button:hover span {
+padding-right: 25px;
+}
+
+.button:hover span:after {
+opacity: 1;
+right: 0;
+}
+a{
+color: inherit;
+}
+
+// effects for the footer
+.pg-footer {
+font-family: 'Roboto', sans-serif;
+top: 1500px;
+}
+
+
+.footer {
+background-color: rgb(68, 79, 180);
+color: #fff;
+}
+.footer-wave-svg {
+background-color: transparent;
+display: block;
+height: 30px;
+position: relative;
+top: -1px;
+width: 100%;
+}
+.footer-wave-path {
+fill: #fffff2;
+}
+
+.footer-content {
+margin-left: auto;
+margin-right: auto;
+max-width: 1230px;
+padding: 40px 15px 450px;
+position: relative;
+}
+
+.footer-content-column {
+box-sizing: border-box;
+float: left;
+padding-left: 15px;
+padding-right: 15px;
+width: 100%;
+color: #fff;
+}
+
+.footer-content-column ul li a {
+color: #fff;
+text-decoration: none;
+}
+
+.footer-logo-link {
+display: inline-block;
+}
+.footer-menu {
+margin-top: 30px;
+}
+
+.footer-menu-name {
+color: #fffff2;
+font-size: 15px;
+font-weight: 900;
+letter-spacing: .1em;
+line-height: 18px;
+margin-bottom: 0;
+margin-top: 0;
+text-transform: uppercase;
+}
+.footer-menu-list {
+list-style: none;
+margin-bottom: 0;
+margin-top: 10px;
+padding-left: 0;
+}
+.footer-menu-list li {
+margin-top: 5px;
+}
+
+.footer-call-to-action-description {
+color: #fffff2;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+.footer-call-to-action-button:hover {
+background-color: #fffff2;
+color: #00bef0;
+}
+.button:last-of-type {
+margin-right: 0;
+}
+.footer-call-to-action-button {
+background-color: #027b9a;
+border-radius: 21px;
+color: #fffff2;
+display: inline-block;
+font-size: 11px;
+font-weight: 900;
+letter-spacing: .1em;
+line-height: 18px;
+padding: 12px 30px;
+margin: 0 10px 10px 0;
+text-decoration: none;
+text-transform: uppercase;
+transition: background-color .2s;
+cursor: pointer;
+position: relative;
+}
+.footer-call-to-action {
+margin-top: 30px;
+}
+.footer-call-to-action-title {
+color: #fffff2;
+font-size: 14px;
+font-weight: 900;
+letter-spacing: .1em;
+line-height: 18px;
+margin-bottom: 0;
+margin-top: 0;
+text-transform: uppercase;
+}
+.footer-call-to-action-link-wrapper {
+margin-bottom: 0;
+margin-top: 10px;
+color: #fff;
+text-decoration: none;
+}
+.footer-call-to-action-link-wrapper a {
+color: #fff;
+text-decoration: none;
+}
+
+
+
+
+
+.footer-social-links {
+bottom: 0;
+height: 54px;
+position: absolute;
+right: 0;
+width: 236px;
+}
+
+.footer-social-amoeba-svg {
+height: 54px;
+left: 0;
+display: block;
+position: absolute;
+top: 0;
+width: 236px;
+}
+
+.footer-social-amoeba-path {
+fill: rgb(26, 26, 99);
+}
+
+.footer-social-link.linkedin {
+height: 26px;
+left: 3px;
+top: 11px;
+width: 26px;
+}
+
+.footer-social-link {
+display: block;
+padding: 10px;
+position: absolute;
+}
+
+.hidden-link-text {
+position: absolute;
+clip: rect(1px 1px 1px 1px);
+clip: rect(1px,1px,1px,1px);
+-webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+clip-path: inset(0px 0px 99.9% 99.9%);
+overflow: hidden;
+height: 1px;
+width: 1px;
+padding: 0;
+border: 0;
+top: 50%;
+}
+
+.footer-social-icon-svg {
+display: block;
+}
+
+.footer-social-icon-path {
+fill: #fffff2;
+transition: fill .2s;
+}
+
+.footer-social-link.twitter {
+height: 28px;
+left: 62px;
+top: 3px;
+width: 28px;
+}
+
+.footer-social-link.youtube {
+height: 24px;
+left: 123px;
+top: 12px;
+width: 24px;
+}
+
+.footer-social-link.github {
+height: 34px;
+left: 172px;
+top: 7px;
+width: 34px;
+}
+
+.footer-copyright {
+background-color: rgb(26, 26, 99);
+color: #fff;
+padding: 15px 30px;
+text-align: center;
+}
+
+.footer-copyright-wrapper {
+margin-left: auto;
+margin-right: auto;
+max-width: 1200px;
+}
+
+.footer-copyright-text {
+color: #fff;
+font-size: 13px;
+font-weight: 400;
+line-height: 18px;
+margin-bottom: 0;
+margin-top: 0;
+}
+
+.footer-copyright-link {
+color: #fff;
+text-decoration: none;
+}
+
+/* Media Query For different screens */
+@media (min-width:320px) and (max-width:479px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+.footer-content {
+margin-left: auto;
+margin-right: auto;
+max-width: 1230px;
+padding: 40px 15px 1050px;
+position: relative;
+}
+}
+@media (min-width:480px) and (max-width:599px)  { /* smartphones, Android phones, landscape iPhone */
+.footer-content {
+margin-left: auto;
+margin-right: auto;
+max-width: 1230px;
+padding: 40px 15px 1050px;
+position: relative;
+}
+}
+@media (min-width:600px) and (max-width: 800px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+.footer-content {
+margin-left: auto;
+margin-right: auto;
+max-width: 1230px;
+padding: 40px 15px 1050px;
+position: relative;
+}
+}
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */
+
+}
+
+
+
+
+@media (min-width: 760px) {
+.footer-content {
+margin-left: auto;
+margin-right: auto;
+max-width: 1230px;
+padding: 40px 15px 450px;
+position: relative;
+}
+
+.footer-wave-svg {
+height: 50px;
+}
+
+.footer-content-column {
+width: 24.99%;
+}
+}
+@media (min-width: 568px) {
+/* .footer-content-column {
+width: 49.99%;
+} */
+}
+.set-img2{
+height: 30px;
+width: auto;
+}
+
+// overlay effect on clicking the events button on the navigation bar
+
+.overlay {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0, 0.9);
+overflow-x: hidden;
+transition: 0.5s;
+}
+
+.overlay-content {
+position: relative;
+top: 25%;
+width: 100%;
+text-align: center;
+margin-top: 30px;
+}
+
+#trouble a {
+padding: 8px;
+text-decoration: none;
+font-size: 36px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+
+#trouble a:hover, #trouble a:focus {
+color: #f1f1f1;
+}
+
+.overlay .closebtn {
+position: absolute;
+top: 20px;
+right: 45px;
+font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+.overlay a {font-size: 20px}
+.overlay .closebtn {
+font-size: 40px;
+top: 15px;
+right: 35px;
+}
+}

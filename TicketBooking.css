@@ -1,0 +1,243 @@
+
+// effects for splitting the screen into two
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    margin-top:200px;
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    right: 0;
+  }
+
+//effect for the form on the right
+.frm {
+    width: 80%;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center ;
+    color:white ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:60px;
+    border-radius: 8px;
+}
+input[type=text], input[type=tel],input[type=email] {
+    width: 40%;
+    font-family:'Alatsi';
+    padding: 6px;
+    border: none;
+    border-bottom:2px solid darkblue ;
+    border-radius: 8px;
+    resize: vertical;
+    margin-left: auto;
+    margin-right: auto;
+}
+label {
+    font-size: 20px;
+}
+input[type=number] {
+    width: 35px;
+}
+h2{
+    font-size: 25px;
+    text-align:right ;
+    margin-right: 25px;
+}
+
+body {
+    background-image: url("https://t3.ftcdn.net/jpg/02/61/67/14/360_F_261671422_MOJX6VsX6rZd6zlJ2FONkyjsCRElhhxt.jpg");
+    background-color: #f2f2f2;
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
+    font-family: 'Alatsi';
+}
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 4px black;
+    font-size: 40px;
+    top: 100px;
+}
+// effects for the table
+table {
+    width: 90%;
+    height: 400px;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    box-shadow: 10px 10px black;
+}
+// hovering effects for the rows of the table 
+tr:hover {background-color:rgba(0, 0, 0, 0.2);}
+
+ td {
+    border-top: 2px solid #ddd;
+  }
+th{
+    font-size: 20px;
+
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+//effects for the "proceed with the payment" button
+.btn_prcd {
+    background-color: rgb(17, 17, 146);
+    color:white;
+    font-size: 20px;
+    width: 250px;
+    padding: 25px;
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+.btn_prcd:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+#btn {
+    background-color: rgb(17, 17, 146);
+    color:white;
+    font-size: 20px;
+    width: 350px;
+    padding: 15px;
+    text-align: center;
+    margin-left: 50%;
+    margin-right: auto;
+    border-radius: 20px;
+}
+#btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+.error {
+    width  : 100%;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+  
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    padding: 0.3em;
+  }
+
+//overlay on clicking 'events' on the navigation bar
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    }
+    
+    .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    }
+   //links on the screen overlay
+    #trouble a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    }
+    
+    #trouble a:hover, #trouble a:focus {
+    color: #f1f1f1;
+    }
+    
+    .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    }
+    
+    @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+    }
+    .closebtn{
+        color: white;
+    }
+//effects of the navigation bar
+    .logo{
+        padding-top: 3px;
+    }
+    
+    .navbar{
+        display: flex;
+        align-items: center;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .navbar li{
+        justify-content: center;
+        cursor: pointer;
+        color: white;
+        border: none;
+        transition: all .4s;
+    }
+    .navbar li:hover{
+        border-radius: 5px;
+        transform: translateY(-10px);
+        box-shadow: 0 7px 0 -2px #f85959,
+        0 15px 0 -4px #39a2db,
+        0 16px 10px -3px #39a2db;
+    }
+    nav{
+        flex: 1;
+        text-align: right;
+    
+    }
+    nav ul{
+        display: inline-block;
+        list-style-type: none;
+    }
+    nav ul li{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    p{
+        color: #555;
+    }
+    #set-img{
+        width: 30px;
+        height: 30px;
+    }
+  

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="TicketBooking.css">
+        <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+        
+
+    </head>
+    <body>
+        <div class="navbar">
+
+            <div class="logo">
+
+                <img id="set-img" src="O35LUD0-removebg-preview-removebg-preview.png">
+
+                <img src="Reminiscence.png" width="200px">
+
+            </div>
+
+            <nav>
+
+                <ul id="navbar">
+
+                    <li id="btn2"><a href="index.html">Home</a></li>
+          
+                          <li id="btn2"><a href="login.html">Login</a></li>
+          
+                          <li id="btn2"><a href="index.html">About</a></li>
+          
+                          <li id="btn2"><a onclick="openNav()">Events</a></li>
+          
+                          <li id="btn2"><a href="index.html.person">Contact us</a></li>
+          
+                          <li id="btn2"><a href="registration.html">Register</a></li>
+          
+                          <li ><a href="merch.html">Merchandise</a></li>
+
+                </ul>
+
+            </nav>
+
+    
+
+            <a href="#karthref"><img id="set-img" src="cart.png"></a>
+
+        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <div id="trouble">
+              <a href="live_events.html">LIVE EVENTS</a>
+              <a href="GENERAL GUIDELINES_ JUDGING CRITERIA.html">JUDGING CRITERIA AND GENERAL GUIDELINES</a>
+              <a href="SCHEDULE1.html">SCHEDULE</a>
+            </div>
+            </div>
+          </div>
+          <script><!--script for the overlay effect-->
+          function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+          }
+          
+          function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+          }
+          </script>
+        
+        
+        <h1>BOOK YOUR TICKETS NOW !!!</h1>
+        <div class="split left">
+        <table class="tbl">
+            <tr>
+                <th>AVAILABLE TICKETS</th>
+                <th>PRICE</th>
+                <th>NO. OF TICKETS AVAILABLE</th>
+                <th>Quantity</th>
+            </tr>
+            <tr class="a1">
+                <td>EARLY BIRD</td>
+                <td class="price">$10.00</td>
+                <td id="nteb">200</td>
+                <td><input type="number" value="0" maxlength="2" id="eb" class ="quantity"></td>
+            </tr>
+            <tr class="a1">
+                <td>EARLY BIRD VIP</td>
+                <td class="price">$20.00</td>
+                <td id="ntebv">100</td>
+                <td><input type="number" value="0" id="ebv" class ="quantity"></td>
+            </tr>
+            <tr class="a1">
+                <td>GENERAL ADMISSION</td>
+                <td class="price">$20.00</td>
+                <td id="ntga">400</td>
+                <td><input type="number" value="0" id="ga" class ="quantity"></td>
+            </tr>
+            <tr class="a1">
+                <td>VIP ADMISIION</td>
+                <td class="price">$30.00</td>
+                <td id="ntva">100</td>
+                <td><input type="number" value="0" id="va" class ="quantity"></td>
+            </tr>
+        </table>
+        <br>
+        <h2>TOTAL PRICE</h2>
+        <h2 id="total">$0.00</h2>
+        </div>
+        <div class="split right">
+        <form class="form" action="#" name="form" >
+            <br>
+            <div class="frm">
+            <label for="name">Name</label>
+            <br>
+            <br>
+            <input type="text" id="name" name="name" required minlength="4" maxlength="80">
+            <br>
+            <br> 
+            <label for="phno">Phone Number</label>
+            <br>
+            <br>
+            <input type="tel" id="phno" name="phno" required>
+            <span class="err" aria-live="polite"></span>
+            <br>
+            <br> 
+            <label for="email">Email ID</label>
+            <br>
+            <br>
+            <input type="email" id="email" name="email" required minlength="10" >
+            <span class="error" aria-live="polite"></span>
+            <br>
+            <br>
+            </div>
+            <br>
+        <br>
+        <br>
+        <button id="btn" >PROCEED WITH THE PAYMENT</button>
+        </form>
+        
+        
+        </div>
+        <script src="TICKETBOOKING.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
+</html>

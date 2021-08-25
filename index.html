@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminiscence</title>
+    <link rel="stylesheet" href="parallax_effect.css">
+    <link rel="stylesheet" href="home_style.css">
+    <link rel="stylesheet" href="countdown_style.css">
+    <link rel="stylesheet" href="about_style.css">
+    <link rel="stylesheet" href="event_cards_style.css">
+    <link rel="stylesheet" href="sponsors_style.css">
+    <link rel="stylesheet" href="testimonies_style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="contact-us_style.css">
+    
+</head>
+<body>
+  <div class="container"> <!-- Full screen Parallax Effect applied tthroughout the home page with varying z index Files:(parallax_effect.css & parallaxApp.js) -->
+    <section class="background">
+      <div class="content-wrapper">
+        <div class="banner">
+          <video src="https://assets.mixkit.co/videos/preview/mixkit-the-crowd-enjoying-a-rock-concert-17630-large.mp4" autoplay muted loop id="bgvid"></video>
+        <div class="content">
+          <div class="navbar">
+              <div class="logo">
+                  <img id="set-img" src="O35LUD0-removebg-preview-removebg-preview.png">
+                  <img src="Reminiscence.png" width="200px">
+              </div>
+              <nav> <!-- Double Box Shadow with different colors navigation bar on hover Files:(home_style.css)-->
+                  <ul id="navbar">
+                      <li id="btn2"><a href="#">Home</a></li>
+                      <li id="btn2"><a href="login.html">Login</a></li>
+                      <li id="btn2"><a href="#about-oo">About</a></li>
+                      <li id="btn2"><a href="#">Events</a></li>
+                      <li id="btn2"><a href="#background">Contact us</a></li>
+                      <li id="btn2"><a href="registration.html">Register</a></li>
+                      <li ><a href="merch.html">Merchandise</a></li>
+                  </ul>
+              </nav>
+      
+              <a href="#karthref"><img id="set-img" src="cart.png"></a>
+          </div>
+          <div class="countdwn"> <!-- Countdown Timer for the last date of registration using CSS and JS - Files: (countdown_style.css & countdownApp.js) -->
+
+            <h1 id="rbef">Register Before</h1>
+
+            <div class="timer">
+    
+                <div class="timer-item">
+        
+                    <div class="timer-number days">
+        
+                    </div>
+        
+                    <div class="timer-info">
+                        Days
+                    </div>
+        
+                </div>
+                
+        
+                <div class="timer-item">
+                    <div class="timer-number hours">
+        
+                    </div>
+                    <div class="timer-info">
+                        Hours
+                    </div>
+                </div>
+        
+                <div class="timer-item">
+                    <div class="timer-number minutes">
+        
+                    </div>
+                    <div class="timer-info">
+                        Minutes
+                    </div>
+                </div>
+        
+                <div class="timer-item">
+                    <div class="timer-number seconds">
+        
+                    </div>
+                    <div class="timer-info">
+                        Seconds
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    
+      </div>
+      </div>
+    </section>
+    <section class="background">
+      <div class="content-wrapper">
+        <div class="about">
+          <video src="Pexels Videos 4703.mp4" autoplay muted loop></video>
+          <div class="abcontent">
+              <h1 id="about">ABOUT US</h1>
+              <p>Reminiscence is <span style="font-family: Lucida Bright">Indian Youth Club</span>'s annual cultural fest, a melting pot of art, talent, skill, creativity, and intellectual prowess in their purest forms that attracts students from across the nation.Reminiscence'20 provides opportunities to ignite and innovate the young minds to demonstrate their technical skills. Break the chains of monotony, and set the explorer free, because this Reminiscence we are going on an electrifying journey.To know about our previous reminiscence<a class="moretime" href="about-timeline.html">Click here</a> </p>
+          </div>
+      </div>
+      </div>
+    </section>
+    <section class="background"> <!-- Top Events to Participate (Card Style) - Files: (event_cards_style.css) -->
+      <div class="content-wrapper">
+        <h1 id="uitop">Top Events to Participate</h1>
+        <div class="page-content-cards">
+          <div class="card">
+            <div class="content-cards">
+              <h2 class="title-cards">BAND</h2>
+              <p class="copy">Teams of 5-6 members battle it out against each other in an expressive musical competition</p>
+                <a href="EventsPage.html" id="lm"><button class="butn">Learn More</button></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content-cards">
+              <h2 class="title-cards">FIFA</h2>
+              <p class="copy">Participants face off in teams of 2 in a football video game on PS4</p>
+              <a href="EventsPage.html" id="lm"><button class="butn">Learn More</button></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content-cards">
+              <h2 class="title-cards">LIVE EVENTS</h2>
+              <p class="copy">Witness the Live Performances from exciting Artists</p>
+              <a href="live_events.html" id="lm"><button class="butn">Learn More</button></a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="content-cards">
+              <h2 class="title-cards">ALL EVENTS</h2>
+              <p class="copy">Explore and Witness all events and register yourself.</p>	
+              <a href="EventsPage.html" id="lm"><button class="butn">Explore &rarr;</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="background"> <!-- Sponsors images Carousel using Slick Carousel - Files: (sponsors_style.css & sponsorsApp.js & cdn for slick -> https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js) -->
+      <div class="content-wrapper">
+        <div class="spons-container">
+          <h2 id="sponsour">Our  Sponsors</h2>
+           <section class="customer-logos slider">
+              <div class="slide"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png" width="30px"></div>
+              <div class="slide"><img src="https://1000logos.net/wp-content/uploads/2016/12/Starbucks-Logo.png" width="30px"></div>
+              <div class="slide"><img src="https://1000logos.net/wp-content/uploads/2018/02/Ford-Logo.png" width="30px"></div>
+              <div class="slide"><img src="https://1000logos.net/wp-content/uploads/2017/03/Nikon-Logo.png" width="30px"></div>
+              <div class="slide"><img src="https://purepng.com/public/uploads/large/amazon-logo-s3f.png" width="60px"></div>
+              <div class="slide"><img src="https://lifebeyondsportmedia.com/bestanden/Football-Sponsors/redbull.jpg" width="30px"></div>
+              <div class="slide"><img src="https://lifebeyondsportmedia.com/bestanden/Football-Sponsors/Nike.jpg" width="30px"></div>
+           </section>
+        </div>
+      </div>
+    </section>
+    <section class="background"> <!-- Testimonies Carousel using swiper API - Files: (testimonies_style.css & testimoniesApp.js  & cdn for swiper -> https://unpkg.com/swiper/swiper-bundle.min.css && https://unpkg.com/swiper/swiper-bundle.min.js)-->
+      <div class="content-wrapper">
+        <section class="testmn">
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <div class="slide-card text-center"><img src="pexels-sebastian-ervi-1763075.jpg" class = "slide-card-img-top" alt="">
+                          <div class="slide-card-body">
+                              <h5>Bharat Mahesh <br>
+                                  <span>IIT Kanpur - Reminiscence 2018</span>
+                              </h5>
+                              <p class="slide-card-text">" It was a wonderful experience filled with joy!"</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="slide-card text-center"><img src="pexels-sebastian-ervi-1763075.jpg" class = "slide-card-img-top" alt="">
+                          <div class="slide-card-body">
+                              <h5>Arjhun Suresh<br>
+                                  <span>BITS Goa - Reminiscence 2017</span>
+                              </h5>
+                              <p class="slide-card-text">" Enjoyed every minute of the event!"</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="slide-card text-center"><img src="pexels-sebastian-ervi-1763075.jpg" class = "slide-card-img-top" alt="">
+                          <div class="slide-card-body">
+                              <h5>Shreya Roy<br>
+                                  <span>SNU - Reminiscence 2018</span>
+                              </h5>
+                              <p class="slide-card-text">" The Energy of the atmosphere didn't even drop for a second throughout the 2 days"</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <div class="slide-card text-center"><img src="pexels-sebastian-ervi-1763075.jpg" class = "slide-card-img-top" alt="">
+                          <div class="slide-card-body">
+                              <h5>Amritha Paramesh <br>
+                                  <span>IIIT Hyderabad-Reminiscence 2016</span>
+                              </h5>
+                              <p class="slide-card-text">" An Experience that I will cherish for the rest of my life"</p>
+                          </div>
+                      </div>
+                  </div>
+                 <div class="swiper-slide">
+                      <div class="slide-card text-center"><img src="pexels-sebastian-ervi-1763075.jpg" class = "slide-card-img-top" alt="">
+                          <div class="slide-card-body">
+                              <h5>Arun Shivaprakash <br>
+                                  <span>SRM University- Reminiscence 2019</span>
+                              </h5>
+                              <p class="slide-card-text">" Limitless Oppurtunities and Endless Enjoyment"</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+          </div>
+      </section>
+      </div>
+    </section>
+    <section class="background"> <!-- Contact Us Pop up effect - Files:(contact-us_style.css) -->
+      <div class="content-wrapper">
+        <div class="ppl-body">
+        <div class="person">
+          <div class="abpple-container">
+            <div class="abpple-container-inner">
+              <img
+                class="circle"
+              />
+              <img
+                class="img img1"
+                src="image_2021-07-19_214210-removebg-preview.png"
+              />
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="name">RajKumar</div>
+          <div class="title">Product Manager</div>
+          <div class="title">Contact: 9824356124</div>
+          <div class="title">rajkumar43@gmail.com</div>
+      </div>
+        <div class="person">
+          <div class="abpple-container">
+            <div class="abpple-container-inner">
+              <img
+                class="circle"
+                
+              />
+              <img
+                class="img img2"
+                src="image_2021-07-19_214443-removebg-preview.png"
+              />
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="name">Rupika</div>
+          <div class="title">Event Manager</div>
+          <div class="title">Contact: 9463272846</div>
+          <div class="title">rupikaganesan345@gmail.com</div>
+        </div>
+        <div class="person">
+          <div class="abpple-container">
+            <div class="abpple-container-inner">
+              <img
+                class="circle"
+                
+              />
+              <img
+                class="img img3"
+                src="image_2021-07-19_214327-removebg-preview.png"
+              />
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="name">Kishore </div>
+          <div class="title">Live Event Organiser</div>
+          <div class="title">Contact: 9478582347</div>
+          <div class="title">kishorekannan01@gmail.com</div>
+        </div>
+        <div class="person">
+          <div class="abpple-container">
+            <div class="abpple-container-inner">
+              <img
+                class="circle"
+                
+              />
+              <img
+                class="img img1"
+                src="image_2021-07-19_141949-removebg-preview.png"
+              />
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="name">Shreyas</div>
+          <div class="title">Cheif Event Manager</div>
+          <div class="title">Contact: 9822356124</div>
+          <div class="title">shreyas07@gmail.com</div>
+        </div>
+      </div>
+    </div>
+    </section>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="parallaxApp.js"></script>
+  <script src="countdownApp.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <script src="sponsorsApp.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="testimoniesApp.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+.logo{
+    padding-top: 3px;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.navbar li{
+    justify-content: center;
+    cursor: pointer;
+    color: black;
+    border: none;
+    transition: all .4s;
+}
+.navbar li:hover{
+    border-radius: 5px;
+    transform: translateY(-10px);
+    box-shadow: 0 7px 0 -2px #f85959,
+    0 15px 0 -4px #39a2db,
+    0 16px 10px -3px #39a2db;
+}
+nav{
+    flex: 1;
+    text-align: right;
+
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    color: #555;
+}
+#set-img{
+    width: 30px;
+    height: 30px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.banner video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.banner .content{
+    position: relative;
+    z-index: 1;
+}
+
+.countdown{
+    margin: 0 35%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(0,450%);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.day,.hour,.minute,.second{
+    font-size: 3rem;
+}
+
+.container-minute{
+    padding: 0 5%;
+    background-color: #39a2db;
+    border: solid 1px black;
+}

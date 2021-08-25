@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body 
+    { 
+        font-family: 'Alatsi';
+        background-image: url("https://bestanimations.com/media/fireworks/1962490925amazing-electrc-feel-fireworks-gif.gif");
+        background-repeat: no-repeat;
+        background-size: 100% 1000px ;
+        overflow-x: hidden;
+    }
+//effects for the navigation bar
+    .logo{
+        padding-top: 3px;
+    }
+    
+    .navbar{
+        display: flex;
+        align-items: center;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .navbar li{
+        justify-content: center;
+        cursor: pointer;
+        color: white;
+        border: none;
+        transition: all .4s;
+    }
+    .navbar li:hover{
+        border-radius: 5px;
+        transform: translateY(-10px);
+        box-shadow: 0 7px 0 -2px #f85959,
+        0 15px 0 -4px #39a2db,
+        0 16px 10px -3px #39a2db;
+    }
+    nav{
+        flex: 1;
+        text-align: right;
+    
+    }
+    nav ul{
+        display: inline-block;
+        list-style-type: none;
+    }
+    nav ul li{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+    p{
+        color: #555;
+    }
+    #set-img{
+        width: 30px;
+        height: 30px;
+    }
+//enhancement for the three buttons on the right side of the screen
+    #mySidenav a {
+        position: absolute;
+        margin-top: 100px;
+        right: -250px;
+        transition: 0.3s;
+        padding: 15px;
+        width: 300px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 7px 0 0 7px;
+      }
+      
+      #mySidenav a:hover {
+        right: 0;
+      }
+      
+      
+      #blog {
+        top: 80px;
+        background-color: #1d35bb;
+      }
+      
+      #projects {
+        top: 140px;
+        background-color: #f44336;
+      }
+      
+      #contact {
+        top: 225px;
+        background-color: #555
+      }
+
+// enhancement for the table 
+    tr:nth-child(even){
+        background-color: #f2f2f2;
+    }
+   
+    table {
+        width: 80%;
+        height:600px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        border-collapse: collapse;
+        text-align: center;
+        background-color: white;
+        background-size: 100%;
+        color: rgb(0, 0, 0);
+        text-shadow: 2px 2px 5px rgb(255, 255, 255);
+        padding: 25px;
+        box-shadow: 10px 10px rgb(214, 133, 133);;
+    }
+
+
+    
+    th {
+        letter-spacing: 2px;
+    }
+    td {
+        letter-spacing: 1px;
+    }
+   
+    .caption {
+        font-family: 'Rock Salt', cursive;
+        margin-right: 30px;
+        float: right;
+        width: 35%;
+        padding: 5px;
+        font-size: 20px;
+        font-weight: bolder;
+        font-style: italic;
+        color: rgb(0, 0, 0);
+        text-shadow: 2px 2px 5px white;
+        text-align: right;
+        letter-spacing: 1px;
+        background-color: rgba(255, 255, 255);
+        border-radius: 10px;
+    }
+//fade out effect for the table  
+    .box{
+        width:100%;
+        margin:10px auto;
+        cursor:pointer;
+        position:relative;
+        transition: all 0.7s linear;
+        -webkit-transition: all 0.7s linear;
+        -moz-transition: all 0.7s linear;
+        -o-transition: all 0.7s linear;
+        -ms-transition: all 0.7s linear;
+    }
+    .evts {
+        background-color: rgba(255, 255, 255);
+            border-radius: 10px;
+            width: 30%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 30px;
+            padding: 10px;
+            text-shadow: 2px 2px 5px white;
+            text-align: center;
+    }
+    .fade_in { 
+        opacity:0.7; 
+    } 
+    .fade_in:hover{ 
+        opacity:1; 
+    } 
+//hovering effects for the event names
+    #evts a:link, a:visited {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        text-align: center;
+        text-decoration: blink;
+        display: inline-block;
+        text-shadow: 2px 2px 5px white;
+    }
+    #evts a:hover, a:active {
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 4px;
+        padding: auto;
+        color:white
+    }
+//overlay on clicking 'events' on the navigation bar
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+        }
+        
+        .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        }
+        
+        #trouble a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        }
+        
+        #trouble a:hover, #trouble a:focus {
+        color: #f1f1f1;
+        }
+        
+        .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+        }
+        
+        @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+        }
+        .closebtn{
+            color: white;
+        }
