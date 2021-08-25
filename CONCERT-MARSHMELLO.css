@@ -3,7 +3,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-// effects for the navigation bar
         .logo{
             padding-top: 3px;
         }
@@ -97,7 +96,6 @@
             background-size: 100% 1020px;
             overflow-x: hidden;
         }
-// effects for the text on image
         .d1 {
             position: absolute;
             top: 100px;
@@ -140,7 +138,6 @@
             text-shadow: 2px 2px 5px rgb(255, 255, 255);
             color: black;
         }
-// enhancement for the three buttons on the right side of the screen
 
         #mySidenav a {
   position: absolute;
@@ -174,7 +171,6 @@
   top: 225px;
   background-color: #555
 }
-// glow effect for the word "marshmello"
 .glow {
   font-size: 100px;
   color: rgb(0, 0, 0);
@@ -193,7 +189,6 @@
   }
 }
 
-//animation for the "book tickets" button 
         
 .button {
   background-color: #f4511e; 
@@ -242,7 +237,6 @@ a{
     color: inherit;
 }
 
-// effects for the footer
 
 .pg-footer {
     font-family: 'Roboto', sans-serif;
@@ -544,7 +538,6 @@ a{
       height: 30px;
       width: auto;
   }
-// overlay effect on clicking 'events' in the navigation bar 
   .overlay {
     height: 100%;
     width: 0;

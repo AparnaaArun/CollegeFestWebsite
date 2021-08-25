@@ -11,7 +11,6 @@ body
         background-size: 100% 1000px ;
         overflow-x: hidden;
     }
-//effects for the navigation bar
     .logo{
         padding-top: 3px;
     }
@@ -60,7 +59,6 @@ body
         width: 30px;
         height: 30px;
     }
-//enhancement for the three buttons on the right side of the screen
     #mySidenav a {
         position: absolute;
         margin-top: 100px;
@@ -94,7 +92,6 @@ body
         background-color: #555
       }
 
-// enhancement for the table 
     tr:nth-child(even){
         background-color: #f2f2f2;
     }
@@ -140,7 +137,6 @@ body
         background-color: rgba(255, 255, 255);
         border-radius: 10px;
     }
-//fade out effect for the table  
     .box{
         width:100%;
         margin:10px auto;
@@ -169,7 +165,6 @@ body
     .fade_in:hover{ 
         opacity:1; 
     } 
-//hovering effects for the event names
     #evts a:link, a:visited {
         color: rgb(0, 0, 0);
         font-size: 16px;
@@ -184,7 +179,6 @@ body
         padding: auto;
         color:white
     }
-//overlay on clicking 'events' on the navigation bar
     .overlay {
         height: 100%;
         width: 0;

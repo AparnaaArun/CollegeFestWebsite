@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-// effects for the navigation bar 
+
 .logo{
     padding-top: 3px;
 }
@@ -97,7 +97,6 @@ body{
     background-size: 100% 1020px;
     overflow-x: hidden;
 }
-// effects for the text on image on the left side
 .d1 {
     position: absolute;
     top: 100px;
@@ -140,7 +139,6 @@ h1 {
     text-shadow: 2px 2px 5px rgb(255, 255, 255);
     color: black;
 }
-// enhancement for the three buttons on the right side of the screen
 #mySidenav a {
 position: absolute;
 margin-top: 100px;
@@ -173,7 +171,6 @@ background-color: #f44336;
 top: 225px;
 background-color: #555
 }
-// glow effect for the word "arijit singh" 
 .glow {
 font-size: 100px;
 color: rgb(0, 0, 0);
@@ -192,7 +189,7 @@ text-shadow: 0 0 20px #fff, 0 0 30px rgb(29, 29, 228), 0 0 40px rgb(29, 29, 228)
 }
 }
 
-// animation using css for the "book tickets" button 
+
 .button {
 background-color: #f4511e; 
 border-radius: 8px;
@@ -240,7 +237,6 @@ a{
 color: inherit;
 }
 
-// effects for the footer
 .pg-footer {
 font-family: 'Roboto', sans-serif;
 top: 1500px;
@@ -542,7 +538,6 @@ height: 30px;
 width: auto;
 }
 
-// overlay effect on clicking the events button on the navigation bar
 
 .overlay {
 height: 100%;

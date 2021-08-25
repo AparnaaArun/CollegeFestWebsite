@@ -1,5 +1,4 @@
 
-// effects for splitting the screen into two
 .split {
     height: 100%;
     width: 50%;
@@ -16,7 +15,6 @@
     right: 0;
   }
 
-//effect for the form on the right
 .frm {
     width: 80%;
     background: rgba(0, 0, 0, 0.7);
@@ -64,7 +62,6 @@ h1 {
     font-size: 40px;
     top: 100px;
 }
-// effects for the table
 table {
     width: 90%;
     height: 400px;
@@ -77,7 +74,6 @@ table {
     margin-top: 20px;
     box-shadow: 10px 10px black;
 }
-// hovering effects for the rows of the table 
 tr:hover {background-color:rgba(0, 0, 0, 0.2);}
 
  td {
@@ -91,7 +87,6 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-//effects for the "proceed with the payment" button
 .btn_prcd {
     background-color: rgb(17, 17, 146);
     color:white;
@@ -138,7 +133,6 @@ tr:nth-child(even) {
     padding: 0.3em;
   }
 
-//overlay on clicking 'events' on the navigation bar
   .overlay {
     height: 100%;
     width: 0;
@@ -159,7 +153,6 @@ tr:nth-child(even) {
     text-align: center;
     margin-top: 30px;
     }
-   //links on the screen overlay
     #trouble a {
     padding: 8px;
     text-decoration: none;
@@ -191,7 +184,6 @@ tr:nth-child(even) {
     .closebtn{
         color: white;
     }
-//effects of the navigation bar
     .logo{
         padding-top: 3px;
     }

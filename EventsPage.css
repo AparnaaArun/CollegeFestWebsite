@@ -33,7 +33,7 @@ body
     transition: all .4s;
 }
 
-.navbar li:hover //Hover on navigation bar with double box shadow and translate in y direction
+.navbar li:hover 
 { 
     border-radius: 5px;
     transform: translateY(-10px);
@@ -102,7 +102,7 @@ a{
     align-items: center;
 }
   
-.flex-container>div //Style elements for flexbox with reduced opacity and box shadow
+.flex-container>div 
 {
     background-color: rgba(0,0,0,0.2);
     color: white;
@@ -132,7 +132,7 @@ a{
 }
 
 
-#overlaydance //Style for the overlay with reduced opacity
+#overlaydance 
 {
     position: fixed;
     display: none;
@@ -147,7 +147,7 @@ a{
     cursor: pointer;
 }
 
-#overlaylit //Style for the overlay with reduced opacity
+#overlaylit 
 {
     position: fixed;
     display: none;
@@ -162,7 +162,7 @@ a{
     cursor: pointer;
 }
 
-#overlayact //Style for the overlay with reduced opacity
+#overlayact 
 {
     position: fixed;
     display: none;
@@ -177,7 +177,7 @@ a{
     cursor: pointer;
 }
 
-#overlaygame //Style for the overlay with reduced opacity
+#overlaygame 
 {
     position: fixed;
     display: none;
@@ -192,7 +192,7 @@ a{
     cursor: pointer;
 }
 
-#overlaywin //Style for on the overlay with reduced opacity
+#overlaywin 
 {
     position: fixed;
     display: none;
@@ -207,7 +207,7 @@ a{
     cursor: pointer;
 }
 
-#overlayphoto //Style for the overlay with reduced opacity
+#overlayphoto 
 {
     position: fixed;
     display: none;
@@ -222,7 +222,7 @@ a{
     cursor: pointer;
 }
   
-#text //Style for the text displayed on the overlay
+#text 
 {
     position: absolute;
     top: 50%;
@@ -235,7 +235,7 @@ a{
     text-align: left;
 } 
 
-#text1 //Style for the text displayed on the overlay
+#text1 
 {
     position: absolute;
     top: 50%;
@@ -248,7 +248,7 @@ a{
     text-align: left;
 } 
 
-.button //css styling for the buttons on the flex boxes
+.button 
 {
     background-color: black;
     color: white;
@@ -261,7 +261,7 @@ a{
     transition: all .4s;
 }
 
-.button:hover //hover effect for the buttons on the flex boxes with increased padding on hover
+.button:hover 
 {
     border: none;
     background-color: rgb(106, 136, 235);
@@ -570,7 +570,7 @@ ul
       width: auto;
 }
 
-.overlay { //for overlay with links
+.overlay { 
     height: 100%;
     width: 0;
     position: fixed;
@@ -583,7 +583,7 @@ ul
     transition: 0.5s;
 }
 
-.overlay-content { //for content on overlay with links
+.overlay-content { 
     position: relative;
     top: 25%;
     width: 100%;
